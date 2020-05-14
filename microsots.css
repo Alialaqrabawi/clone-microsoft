@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+} 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+} 
+a{
+    color: black; 
+    text-decoration: none;
+} 
+ul {
+    list-style: none;
+
+} 
+.container{
+    width: 90%;
+    margin:0 auto;
+} 
+
+.main-nav{
+    display: flex;
+height: 70px; 
+align-items: center;
+padding-top: 20px 0; 
+justify-content: space-between;
+font-size: 14px;
+} 
+.main-nav .logo{
+    width: 112px;
+}
+
+.main-nav ul {
+    display: flex;
+    
+} 
+.main-nav ul li {
+    padding-right: 10px;
+    margin-left: 10px;
+}  
+.main-nav ul li a{
+    padding-bottom: 2px;
+}
+.main-nav ul li a:hover {
+border-bottom: 2px solid #226622;
+} 
+
+.main-menu{
+flex: 1;
+margin-left: 20px;
+} 
+
+.header{
+width: 100%;
+height: 400px;
+background: url("slide1.png") no-repeat ; 
+background-size: cover; 
+text-align: center;
+display: flex; 
+flex-direction: column;
+align-items: center;
+justify-content: flex-end; 
+padding-bottom: 30px;
+margin-bottom: 20px;
+} 
+.header h3 , .header p {
+    margin-bottom: 25px;
+}
+ .header h3 {
+     font-size: 22px;
+ }
+.header p {
+    font-size: 17px;
+    font-weight: 500;
+} 
+
+/* Section1 */
+.card1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+margin-bottom: 40px;
+    grid-column-gap: 30px;
+}
+ 
+.card1 img {
+
+    width: 100%;
+} 
+.card1 h3 , .card1 p , .card1 img {
+    margin-bottom: 20px;
+}  
+.card1 a {
+    font-size: 18px;
+color: #0067b8; 
+font-weight: 700; 
+}
+ 
+.card1 a:hover i {
+    margin-left: 7px;
+} 
+
+
+ 
+.button{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+padding:10px 20px;
+}  
+.button:hover{
+opacity: 0.9;
+}  
+.menu-btn{
+    cursor: pointer;
+position: absolute;
+top: 20px;
+right: 30px;
+display: none;
+}
+
+
+
+.xbox{ 
+height: 400px;
+width: 100%;
+background: url("xbox.png") no-repeat center center   ;
+background-size: cover;  
+} 
+ .xbox .content{
+width: 40%; 
+padding: 50px 0 0 30px;
+
+ }
+  .content p , .content h4{
+    margin: 10px 0 20px;
+}
+        
+  .content a {
+      background-color: black;
+      color: white;
+      padding:10px 20px;
+font-weight: 600;
+transition: all 0.3s ease;
+    } 
+    .content a:hover{
+        opacity: 0.9;
+    } 
+    .content h4 {
+        font-size: 19px;
+    } 
+    .content p {
+        font-size: 18px;
+    } 
+
+  .card2{
+        display: grid;
+    grid-template-columns: repeat(4,1fr); 
+    grid-column-gap: 40px;
+
+margin: 40px 0 0 40px;
+    }  
+  .card2 img {
+      width: 100%;
+  }   
+  .card2 h3 , .card2 p , .card2 a {
+      margin-bottom: 10px;  
+      text-transform: uppercase;
+
+  } 
+  .card2 a {
+    font-size: 18px;
+    color: #0067b8; 
+    font-weight: 700; 
+  } 
+  .card2 a:hover i {
+    margin-left: 7px;
+}
+
+.carbon{
+width: 100%;
+height: 500px; 
+color: white;
+margin-top: 40px;
+    background: url("carbon.jpg") no-repeat center center;
+    background-size: cover;
+} 
+ .carbon .content {
+     width: 55%;
+     padding:100px 0 0 30px;
+ } 
+ .carbon .content p {
+     font-size: 16px;
+     font-weight: 500;
+ } 
+ .carbon .content a {
+     background-color: white;
+     color: black;
+ }
+
+
+ .fa-facebook {
+    background: #3B5998;
+    color: white; 
+    margin-left: 10px;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    margin-left: 10px;
+
+    color: white;
+  } 
+
+  .fa-linkedin {
+
+    background: #007bb5;
+    color: white; 
+    margin-left: 10px;
+
+  } 
+ 
+.social{
+    display: flex; 
+    padding-top: 30px; 
+} 
+
+
+.links {
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+  }
+  
+.links-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+   
+  .links-inner ul li {
+      margin-bottom: 10px;
+  } 
+footer{ 
+   background-color: #f2f2f2;
+    color: #616161;
+margin: 0 auto;
+padding: 35px 0;
+
+}
+.footer-inner{
+    max-width: 1100px;
+    display: flex; 
+    margin: 0 auto;
+    padding: 20px; 
+    justify-content: space-around;
+}  
+.footer-inner ul {
+    display: flex; 
+    padding: 10px; 
+    flex-wrap: wrap;
+} 
+.footer-inner ul li {
+    margin-left: 20px; 
+    font-size: 14px;
+} 
+
+ 
+
+@media (max-width:700px){
+
+    .card1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    margin-bottom: 40px;
+        grid-column-gap: 30px;
+    } 
+
+    .xbox p  {
+display: none;
+    }  
+
+   
+    .xbox .content a i {
+   margin-top: 20px;
+    }
+    .card2{
+        display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    grid-column-gap: 40px; 
+
+    }
+    .links-inner {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        align-items: flex-start;
+        justify-content: center;
+      }
+.footer-inner ul li {
+        margin-left: 10px; 
+        font-size: 14px;
+    } 
+   
+    .menu-btn{
+display: block;
+
+    }        
+    .main-nav .right-menu{
+
+        margin-right: 50px;
+    }
+    .main-nav  .main-menu{
+        display: flex;
+        flex-direction: column; 
+        position: absolute;
+top: 0;
+left: 0; 
+width: 50%;
+height: 100%;
+background-color: #f2f2f2;
+color: white;
+opacity: 0.9;
+padding:30px;
+border-right: 2px solid #cccccc;
+transform: translateX(-400px);
+transition: all 0.4s ease;
+    } 
+    .main-nav .main-menu li {
+padding:10px;
+border-bottom:1px solid #cccccc;
+font-size: 15px;
+
+    }
+
+    .main-nav  .main-menu.show{
+        transform: translateX(-20px);
+
+
+    }
+    .main-nav .main-menu li {
+        margin-bottom: 10px;
+    } 
+
+
+
+     
+ 
+      
+
+} 
+@media (max-width:500px) {
+
+    .card1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    margin-bottom: 40px;
+ 
+    }
+    .card2{
+    grid-template-columns: repeat(1,1fr); 
+
+    }    
+   
+.links-inner {
+    grid-template-columns: 1fr;
+}   
+
+.links-inner ul {
+    margin-bottom: 10px ;
+} 
+
+
+} 
+
+
+
+
